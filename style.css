@@ -241,37 +241,37 @@ li.nav-item a {
     list-style: disc;
 }
 
-#profile-2 .left-1{
+#profile-2 .left-1 {
     position: relative;
     top: 20px;
     left: 150px;
     width: fit-content;
 }
 
-#profile-2 .left-2{
+#profile-2 .left-2 {
     position: relative;
     top: 110px;
     left: 150px;
     width: fit-content;
 }
 
-#profile-2 .right-1{
+#profile-2 .right-1 {
     position: relative;
     right: 130px;
 }
 
-#profile-2 .right-2{
+#profile-2 .right-2 {
     position: relative;
     right: 130px;
     top: 110px;
 }
 
-#profile-2 h2{
+#profile-2 h2 {
     font-size: 20px;
     color: #000;
 }
 
-#profile-2 .line{
+#profile-2 .line {
     position: absolute;
     left: 480px;
 }
@@ -356,7 +356,7 @@ li.nav-item a {
 }
 
 #dokumentasi p.deskripsi {
-    font-size: black;
+    color: black;
     font-size: 20px;
     text-align: center;
     margin: 30px 120px 0 120px;
@@ -387,7 +387,7 @@ li.nav-item a {
     transition: 1s ease all;
 }
 
-.item.black img{
+.item.black img {
     width: 300px !important;
     position: relative;
     left: 270px;
@@ -498,11 +498,11 @@ li.nav-item a {
 
 
 
-#footer img{
+#footer img {
     width: 210px;
 }
 
-#footer .col h3{
+#footer .col h3 {
     font-size: 16;
     color: black;
     text-align: center;
@@ -510,53 +510,248 @@ li.nav-item a {
     margin: 20px 0;
 }
 
-#footer{
+#footer {
     margin-bottom: 30px;
     width: 100%;
 }
 
-#footer .col-right{
+#footer .col-right {
     margin-left: 300px;
 }
 
-#footer .col-left{
+#footer .col-left {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#footer .col-left p{
+#footer .col-left p {
     font-size: 10px;
     color: #ababab;
 }
 
-#footer .kontak a{
+#footer .kontak a {
     color: #000;
     cursor: pointer;
     text-decoration: none;
     font-size: 12px;
 }
 
-#footer .kontak h2{
+#footer .kontak h2 {
     font-size: 20px;
     margin-bottom: 15px;
 }
 
-#footer .kontak p{
+#footer .kontak p {
     margin-bottom: 3px;
 }
 
-#footer .dukung{
+#footer .dukung {
     margin-top: 50px;
 }
 
-#footer .dukung h2{
+#footer .dukung h2 {
     font-size: 20px;
     margin-bottom: 10px;
 }
-#footer .dukung h4{
+
+#footer .dukung h4 {
     font-size: 12px;
     margin: 2px 0;
+}
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+    #beranda .col-5 img.image-banner {
+        width: 100px;
+        background-color: transparent;
+        position: relative;
+        left: 10px;
+    }
+
+    #profile img {
+        width: 100px;
+        position: relative;
+        left: 150px;
+    }
+
+    #cara-penggunaan .container.d-flex {
+        flex-direction: column;
+    }
+
+    #footer.container.d-flex {
+        flex-direction: column;
+    }
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .logo-image {
+        width: 100px;
+        /* margin: 0 150px 0 0; */
+    }
+
+    /* .navbar{
+        width: fit-content;
+    } */
+
+    .navbar .container {
+        display: inline;
+        width: fit-content;
+    }
+
+    .navbar .nav-item {
+        display: flex;
+        justify-content: center;
+        margin: 0px !important;
+    }
+
+    #cara-penggunaan .col.text {
+        position: relative;
+        left: 0px;
+    }
+
+    #beranda .col-5 {
+        width: 100% !important;
+        display: flex;
+        justify-content: center;
+    }
+
+    #beranda .col-7 {
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    #beranda .col-7 h1.title-banner {
+        font-size: 30px;
+    }
+
+    #beranda .col-7 h3 {
+        font-size: 15px !important;
+    }
+
+    #beranda .btn {
+        /* font-size: 15px !important; */
+        width: 360px !important;
+        margin-top: 30px;
+    }
+
+    #beranda .col-7 h1.title-banner,
+    #beranda .col-7 h3 {
+        margin: 10px 15px !important;
+    }
+
+    #beranda .col-5 img.image-banner {
+        width: 250px;
+        background-color: transparent;
+        left: 0px;
+        align-items: center;
+    }
+
+    #beranda .d-flex {
+        flex-direction: column-reverse;
+        /* padding: 50px 0 0 0; */
+    }
+
+    #profile {
+        padding: 50px 0 0 0 !important;
+    }
+
+    #profile .col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #profile .d-flex {
+        flex-direction: column-reverse;
+        padding: 50px 0 0 0;
+    }
+
+    #profile img {
+        width: 250px;
+        position: unset;
+    }
+
+    #profile h1 {
+        margin-top: 30px;
+    }
+
+    #profile p,
+    #profile h1 {
+        width: 100% !important;
+        padding: 0 10px !important;
+    }
+
+    #profile .btn {
+        /* font-size: 15px !important; */
+        width: 360px !important;
+        /* margin-top: 30px; */
+    }
+
+
+    #cara-penggunaan{
+        padding:50px 0 0 0 !important;
+    }
+
+
+    #cara-penggunaan .container.d-flex {
+        flex-direction: column;
+    }
+
+    .youtube-video {
+        width: 100%;
+    }
+
+    #cara-penggunaan .text h1,
+    #cara-penggunaan .text p{
+        width: 100%;
+    }
+
+    #dokumentasi{
+        padding:50px 0 0 0 !important;
+    }
+    
+    #dokumentasi p.deskripsi {
+        margin: 0px !important;
+        padding: 10px;
+    }
+
+    #word {
+        bottom: 0px !important;
+    }  
+    
+    #word h1{
+       font-size: 20px;
+    }
+
+    #footer{
+        padding: 50px 0 0 0 !important;
+    }
+
+
+    #footer.container.d-flex {
+        flex-direction: column-reverse;
+    }
+
+    #footer .col-right {
+        margin-left: 0px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    #footer .sosmed .d-flex{
+        justify-content: center;
+    }
+
+
 }
 
 
