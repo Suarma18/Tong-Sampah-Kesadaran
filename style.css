@@ -132,6 +132,10 @@ table {
     border-spacing: 0;
 }
 
+p{
+    line-height: 25px !important;
+}
+
 
 
 /*! CSS WEBSITE START*/
@@ -729,7 +733,7 @@ li.nav-item a {
     }  
     
     #word h1{
-       font-size: 20px;
+       font-size: 25px;
     }
 
     #footer{
