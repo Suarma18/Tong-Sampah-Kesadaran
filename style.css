@@ -402,7 +402,7 @@ li.nav-item a {
 }
 
 .item.black img.landscape {
-    width: 600px !important;
+    width: 600px;
     position: relative;
     left: 135px;
 }
@@ -819,6 +819,66 @@ width: 500px;
         justify-content: center;
     }
 
+    #mengenal_sampah h1{
+        font-size: 24px;
+    }  
+    
+    #mengenal_sampah p{
+        font-size: 14px;
+    }
+   
+    #mengenal_sampah p.one{
+        max-width: 80%;
+    }
+   
+    #mengenal_sampah img.one{
+        width: 80%;
+        margin: 0 auto;
+        display: block;
+    }
+   
+    #mengenal_sampah .col-lg-5 h1.text-start{
+        text-align: center !important;
+    }  
+
+    #mengenal_sampah p.two{
+        max-width: 80%;
+        margin: 0 auto;
+        display: block;
+    }  
+
+    #mengenal_sampah .row#organik .row,
+    #mengenal_sampah .row#anorganik .row{
+        display: flex;
+        flex-direction: column !important;
+        gap: 20px;
+    }  
+
+    #mengenal_sampah{
+        padding: 50px 0 0 0;
+    }
+
+    .item.black img.landscape {
+        width: 250px !important;
+        position: relative;
+        left: 60px;
+        /* top: 50px; */
+    }
+    
+    .item.black img.potrait{
+        width: 150px !important;
+        position: relative;
+        left: 105px;
+    }
+
+    .owl-carousel .owl-stage-outer {
+        height: 400px;
+    }
+
+    button.owl-next svg,
+    button.owl-prev svg{
+        scale: 0.6 !important;
+    }
 
 }
 
