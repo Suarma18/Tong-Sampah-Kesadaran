@@ -132,7 +132,7 @@ table {
     border-spacing: 0;
 }
 
-p{
+p {
     line-height: 25px !important;
 }
 
@@ -142,7 +142,7 @@ p{
 
 .logo-image {
     width: 250px;
-    margin: 0 150px 0 0;
+    margin: 0 100px 0 0;
 }
 
 ul li.nav-item {
@@ -153,6 +153,16 @@ a.nav-link.active {
     background-color: #18C965;
     border-radius: 30px;
     padding: 10px 0;
+}
+
+a.nav-link2 {
+    display: block;
+    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+    font-size: var(--bs-nav-link-font-size);
+    font-weight: var(--bs-nav-link-font-weight);
+    color: var(--bs-nav-link-color);
+    text-decoration: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
 }
 
 li.nav-item a {
@@ -391,18 +401,23 @@ li.nav-item a {
     transition: 1s ease all;
 }
 
-.item.black img {
+.item.black img.landscape {
+    width: 600px !important;
+    position: relative;
+    left: 135px;
+}
+
+.item.black img.potrait{
     width: 300px !important;
     position: relative;
     left: 270px;
-
 }
 
 .owl-carousel .owl-stage-outer {
     position: relative;
     overflow: hidden;
     /* -webkit-transform: translate3d(0, 0, 0); */
-    height: 500px;
+    height: 650px;
     /* background-color: aqua; */
     transition: 1s ease all;
     padding: 20px 0;
@@ -564,6 +579,55 @@ li.nav-item a {
     margin: 2px 0;
 }
 
+/* Mengenal Sampah */
+#mengenal_sampah h1{
+font-size: 36px;
+font-weight: bold;
+color: #1E1E1E;
+}
+
+#mengenal_sampah p{
+font-size: 20px;
+color: #000;
+}
+
+#mengenal_sampah{
+padding: 150px 0 0 0;
+}
+
+#mengenal_sampah .row{
+margin-top: 50px;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+#mengenal_sampah p.one{
+max-width: 50%;
+}
+
+#mengenal_sampah p.two{
+text-align: justify;
+}
+
+#mengenal_sampah img.one{
+width: 500px;
+}
+
+#mengenal_sampah .row#organik img,
+#mengenal_sampah .row#anorganik img
+{
+    width: 50%; 
+    display: block; 
+    margin: 0 auto;
+}
+
+
+/* Mengenal Sampah */
+
+
+
 /* On screens that are 992px or less, set the background color to blue */
 @media screen and (max-width: 992px) {
     #beranda .col-5 img.image-banner {
@@ -701,8 +765,8 @@ li.nav-item a {
     }
 
 
-    #cara-penggunaan{
-        padding:50px 0 0 0 !important;
+    #cara-penggunaan {
+        padding: 50px 0 0 0 !important;
     }
 
 
@@ -715,14 +779,14 @@ li.nav-item a {
     }
 
     #cara-penggunaan .text h1,
-    #cara-penggunaan .text p{
+    #cara-penggunaan .text p {
         width: 100%;
     }
 
-    #dokumentasi{
-        padding:50px 0 0 0 !important;
+    #dokumentasi {
+        padding: 50px 0 0 0 !important;
     }
-    
+
     #dokumentasi p.deskripsi {
         margin: 0px !important;
         padding: 10px;
@@ -730,13 +794,13 @@ li.nav-item a {
 
     #word {
         bottom: 0px !important;
-    }  
-    
-    #word h1{
-       font-size: 25px;
     }
 
-    #footer{
+    #word h1 {
+        font-size: 25px;
+    }
+
+    #footer {
         padding: 50px 0 0 0 !important;
     }
 
@@ -751,7 +815,7 @@ li.nav-item a {
         text-align: center;
     }
 
-    #footer .sosmed .d-flex{
+    #footer .sosmed .d-flex {
         justify-content: center;
     }
 
